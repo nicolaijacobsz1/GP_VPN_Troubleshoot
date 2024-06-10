@@ -1,6 +1,6 @@
 # Check Internet Connectivity
 Try {
-    Test-Connection ipgvpn.domain.com -Count 2 -ErrorAction Stop | Out-Null
+    Test-Connection vpn.domain.com -Count 2 -ErrorAction Stop | Out-Null
     Write-Host "Internet connectivity check passed." -ForegroundColor Green
 } Catch {
     Write-Host "Internet connectivity check failed. Please check your network connection." -ForegroundColor Red
